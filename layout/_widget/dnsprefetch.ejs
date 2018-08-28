@@ -2,6 +2,12 @@
 <% if(theme.vendors.materialcdn) { %>
     <link rel="dns-prefetch" href="<%= theme.vendors.materialcdn %>"/>
 <% } %>
+<% if(theme.vendors.jquery || ) { %>
+    <link rel="dns-prefetch" href="<%= theme.vendors.jquery %>"/>
+<% } %>
+<% if(theme.vendors.fontawesome) { %>
+    <link rel="dns-prefetch" href="<%= theme.vendors.fontawesome %>"/>
+<% } %>
 <% if( (theme.leancloud.enable === true) || (theme.comment.use == "valine") ) { %>
     <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
 <% } %>
